@@ -23,7 +23,7 @@ export const businessAreas: BusinessArea[] = [
     id: "wholesale",
     title: "Veleprodaja",
     shortDescription:
-      "Pouzdano snabdijevanje građevinskim materijalima za firme, izvođače i poslovne partnere.",
+      "Pouzdano snabdevanje građevinskim materijalima za firme, izvođače i poslovne partnere.",
     href: "/veleprodaja/",
   },
   {

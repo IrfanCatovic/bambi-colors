@@ -16,7 +16,7 @@ export const brandStatement = {
   heading: "Od građevinskog materijala do prostora za život.",
   paragraphs: [
     "Više od 20 godina iskustva u građevinskom sektoru omogućilo nam je da razvijemo poslovanje koje danas povezuje građevinski materijal, veleprodaju, završne radove i razvoj sopstvenih stambenih i turističkih projekata.",
-    "Poznavanje cijelog procesa daje nam širu perspektivu svakog projekta — od izbora materijala i izvođenja do prostora koji na kraju postaje dom, poslovni prostor ili investicija.",
+    "Poznavanje celog procesa daje nam širu perspektivu svakog projekta — od izbora materijala i izvođenja do prostora koji na kraju postaje dom, poslovni prostor ili investicija.",
   ],
 } as const;
 
@@ -48,7 +48,7 @@ export const whyBambi: {
         "Pažljiv odnos prema materijalima, izvedbi i završnoj obradi svakog prostora.",
     },
     {
-      title: "Dugoročna vrijednost",
+      title: "Dugoročna vrednost",
       description:
         "Projekti osmišljeni sa fokusom na funkcionalnost, lokaciju i kvalitet života.",
     },
@@ -62,7 +62,7 @@ export const businessAreasSection = {
 
 export const aboutTeaser = {
   heading: "Kompanija izgrađena na iskustvu.",
-  text: "Od prvih koraka u trgovini građevinskim materijalom do razvoja sopstvenih stambenih i turističkih projekata, Bambi Colors Group danas povezuje različite dijelove građevinskog procesa u jednu cjelinu.",
+  text: "Od prvih koraka u trgovini građevinskim materijalom do razvoja sopstvenih stambenih i turističkih projekata, Bambi Colors Group danas povezuje različite delove građevinskog procesa u jednu celinu.",
   ctaLabel: "Upoznajte Bambi Colors Group",
   href: "/o-nama/",
   image: {

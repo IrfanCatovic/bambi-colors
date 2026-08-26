@@ -193,7 +193,7 @@ export function HeroSlider({ projects }: HeroSliderProps) {
             <button
               type="button"
               className="inline-flex size-12 items-center justify-center border border-white/35 text-white transition-colors hover:border-white hover:bg-white hover:text-ink"
-              aria-label="Sljedeći projekat"
+              aria-label="Sledeći projekat"
               onClick={() => {
                 setPaused(true);
                 next();

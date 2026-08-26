@@ -16,20 +16,20 @@ export const projects: Project[] = [
     location: "Novi Pazar, Srbija",
     type: "Stambeno-poslovni projekat",
     shortDescription:
-      "Dvije lamele, 48 stanova i 51 parking mjesto u projektu koji spaja funkcionalnost, kvalitet i savremeni gradski život.",
+      "Dve lamele, 48 stanova i 51 parking mesto u projektu koji spaja funkcionalnost, kvalitet i savremeni gradski život.",
     description:
-      "Projekat savremenog gradskog stanovanja organizovan kroz dvije lamele, sa funkcionalnim stambenim jedinicama, poslovnim prostorom i organizovanim parkingom.",
+      "Projekat savremenog gradskog stanovanja organizovan kroz dve lamele, sa funkcionalnim stambenim jedinicama, poslovnim prostorom i organizovanim parkingom.",
     status: "Aktuelan projekat",
     href: "/projekti/novi-pazar/",
     heroLabel: "NOVI PAZAR · STAMBENO-POSLOVNI PROJEKAT",
     heroHeading: "Savremeno stanovanje, promišljeno do detalja.",
     heroDescription:
-      "Dvije lamele, 48 stanova i 51 parking mjesto u projektu koji spaja funkcionalnost, kvalitet i savremeni gradski život.",
+      "Dve lamele, 48 stanova i 51 parking mesto u projektu koji spaja funkcionalnost, kvalitet i savremeni gradski život.",
     sectionLabel: "NOVI PAZAR",
     sectionTitle: "Stambeno-poslovni projekat",
     sectionCopy:
-      "Projekat savremenog gradskog stanovanja organizovan kroz dvije lamele, sa funkcionalnim stambenim jedinicama, poslovnim prostorom i organizovanim parkingom.",
-    facts: ["48 stanova", "2 lamele", "51 parking mjesto", "Po + Pr + 6"],
+      "Projekat savremenog gradskog stanovanja organizovan kroz dve lamele, sa funkcionalnim stambenim jedinicama, poslovnim prostorom i organizovanim parkingom.",
+    facts: ["48 stanova", "2 lamele", "51 parking mesto", "Po + Pr + 6"],
     stats: [
       { label: "Stanovi", value: "48" },
       { label: "Lamele", value: "2" },
@@ -56,7 +56,7 @@ export const projects: Project[] = [
     location: "Sjenica, Srbija",
     type: "Stambeno-poslovni projekat",
     shortDescription:
-      "55 stanova, 6 poslovnih prostora i 63 parking mjesta u savremenom objektu projektovanom za svakodnevni komfor.",
+      "55 stanova, 6 poslovnih prostora i 63 parking mesta u savremenom objektu projektovanom za svakodnevni komfor.",
     description:
       "Savremeno projektovan objekat koji povezuje stanovanje, poslovne sadržaje i organizovanu garažnu i parking infrastrukturu.",
     status: "Aktuelan projekat",
@@ -64,7 +64,7 @@ export const projects: Project[] = [
     heroLabel: "SJENICA · STAMBENO-POSLOVNI PROJEKAT",
     heroHeading: "Prostor za život koji traje.",
     heroDescription:
-      "55 stanova, 6 poslovnih prostora i 63 parking mjesta u savremenom objektu projektovanom za svakodnevni komfor.",
+      "55 stanova, 6 poslovnih prostora i 63 parking mesta u savremenom objektu projektovanom za svakodnevni komfor.",
     sectionLabel: "SJENICA",
     sectionTitle: "Stambeno-poslovni projekat",
     sectionCopy:
@@ -72,7 +72,7 @@ export const projects: Project[] = [
     facts: [
       "55 stanova",
       "6 poslovnih prostora",
-      "63 parking mjesta",
+      "63 parking mesta",
       "Po + Pr + 6",
     ],
     stats: [
