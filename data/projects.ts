@@ -37,11 +37,13 @@ export const projects: Project[] = [
       { label: "Spratnost", value: "Po + Pr + 6" },
     ],
     images: {
-      // Replace with /images/projects/novi-pazar/hero.webp when ready
-      hero: "/images/projects/novi-pazar/hero.svg",
-      card: "/images/projects/novi-pazar/card.svg",
-      gallery: [],
-      heroAlt: "Projekat Novi Pazar — eksterijer (placeholder)",
+      hero: "/images/projects/novi-pazar/hero.jpg",
+      card: "/images/projects/novi-pazar/card.jpg",
+      gallery: [
+        "/images/projects/novi-pazar/gallery-01.jpg",
+        "/images/projects/novi-pazar/gallery-02.jpg",
+      ],
+      heroAlt: "Projekat Novi Pazar — eksterijer stambeno-poslovnog objekta",
       renderBrief:
         "Wide exterior architectural render of the complete residential building, preferably 3/4 perspective, daytime or warm evening light. Building dominant with negative space for hero copy.",
     },
