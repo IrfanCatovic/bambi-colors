@@ -11,32 +11,32 @@ import { Container } from "@/components/layout/Container";
 import Link from "next/link";
 
 /**
- * Corporate footer aligned with homepage visual language.
+ * Corporate footer — readable type, clear logo, calm spacing.
  */
 export function Footer() {
   const year = new Date().getFullYear();
 
   return (
     <footer className="mt-auto border-t border-white/10 bg-ink text-surface">
-      <Container className="py-14 sm:py-16">
+      <Container className="py-16 sm:py-20">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-12 lg:gap-10">
           <div className="lg:col-span-4">
-            <Logo height={44} href="/" />
-            <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/60">
+            <Logo height={52} href="/" />
+            <p className="mt-6 max-w-sm text-[0.95rem] leading-relaxed text-white/65">
               {COMPANY_DESCRIPTION}
             </p>
           </div>
 
           <div className="lg:col-span-2">
-            <p className="text-xs font-medium uppercase tracking-[0.16em] text-brand-red-soft">
+            <p className="text-[0.7rem] font-medium uppercase tracking-[0.18em] text-brand-red-soft sm:text-xs">
               Projekti
             </p>
-            <ul className="mt-4 space-y-2.5">
+            <ul className="mt-5 space-y-3">
               {footerProjectLinks.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm text-white/65 transition-colors hover:text-white"
+                    className="text-[0.95rem] text-white/70 transition-colors hover:text-white"
                   >
                     {item.label}
                   </Link>
@@ -46,15 +46,15 @@ export function Footer() {
           </div>
 
           <div className="lg:col-span-3">
-            <p className="text-xs font-medium uppercase tracking-[0.16em] text-brand-red-soft">
+            <p className="text-[0.7rem] font-medium uppercase tracking-[0.18em] text-brand-red-soft sm:text-xs">
               Poslovanje
             </p>
-            <ul className="mt-4 space-y-2.5">
+            <ul className="mt-5 space-y-3">
               {footerNavigation.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm text-white/65 transition-colors hover:text-white"
+                    className="text-[0.95rem] text-white/70 transition-colors hover:text-white"
                   >
                     {item.label}
                   </Link>
@@ -64,14 +64,14 @@ export function Footer() {
           </div>
 
           <div className="lg:col-span-3">
-            <p className="text-xs font-medium uppercase tracking-[0.16em] text-brand-red-soft">
+            <p className="text-[0.7rem] font-medium uppercase tracking-[0.18em] text-brand-red-soft sm:text-xs">
               Kontakt
             </p>
-            <ul className="mt-4 space-y-2.5 text-sm text-white/65">
+            <ul className="mt-5 space-y-3 text-[0.95rem] text-white/70">
               <li>
                 <a
                   href={PHONE_HREF}
-                  className="text-white transition-colors hover:text-brand-red-soft"
+                  className="text-base text-white transition-colors hover:text-brand-red-soft sm:text-lg"
                 >
                   {PHONE_DISPLAY}
                 </a>
@@ -83,7 +83,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col gap-2 border-t border-white/10 pt-6 text-xs text-white/45 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-14 flex flex-col gap-3 border-t border-white/10 pt-7 text-sm text-white/50 sm:flex-row sm:items-center sm:justify-between">
           <p>
             © {year} {COMPANY_NAME}. Sva prava zadržana.
           </p>

@@ -16,7 +16,7 @@ function normalizePath(path: string) {
 }
 
 /**
- * Desktop primary navigation with projects dropdown and active accents.
+ * Desktop primary navigation — slightly larger for scanability.
  */
 export function DesktopNav({ className }: DesktopNavProps) {
   const pathname = normalizePath(usePathname() ?? "/");
@@ -24,7 +24,7 @@ export function DesktopNav({ className }: DesktopNavProps) {
   return (
     <nav
       aria-label="Glavna navigacija"
-      className={cn("hidden items-center gap-6 xl:gap-7 lg:flex", className)}
+      className={cn("hidden items-center gap-7 xl:gap-8 lg:flex", className)}
     >
       {mainNavigation.map((item) => {
         if ("children" in item && item.children) {
@@ -50,7 +50,7 @@ export function DesktopNav({ className }: DesktopNavProps) {
             key={item.href}
             href={item.href}
             className={cn(
-              "text-sm font-medium transition-colors hover:text-brand-red",
+              "text-[0.95rem] font-medium tracking-wide transition-colors hover:text-brand-red",
               active ? "text-brand-red" : "text-ink",
             )}
             aria-current={active ? "page" : undefined}

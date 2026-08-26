@@ -7,7 +7,7 @@ type ContainerProps = {
 };
 
 /**
- * Consistent horizontal padding and max width across sections.
+ * Site content width — architectural scale (~1320px), not narrow editorial.
  */
 export function Container({
   children,
@@ -17,7 +17,7 @@ export function Container({
   return (
     <Tag
       className={cn(
-        "mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10",
+        "mx-auto w-full max-w-[1320px] px-5 sm:px-8 lg:px-10",
         className,
       )}
     >

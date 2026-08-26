@@ -73,7 +73,7 @@ export function MobileNav({ className }: MobileNavProps) {
             className="fixed inset-y-0 right-0 z-50 flex w-[min(100%,22rem)] flex-col bg-surface"
           >
             <div className="flex items-center justify-between border-b border-line px-5 py-4">
-              <Logo height={32} href="/" />
+              <Logo height={36} href="/" />
               <button
                 type="button"
                 className="inline-flex size-10 items-center justify-center text-ink"

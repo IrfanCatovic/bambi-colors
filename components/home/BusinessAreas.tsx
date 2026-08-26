@@ -8,43 +8,42 @@ type BusinessAreasProps = {
 };
 
 /**
- * Architectural grid of business areas — no icon cards.
+ * Capability overview — numbered columns with thin dividers, no cards.
  */
 export function BusinessAreas({ areas }: BusinessAreasProps) {
   return (
-    <section className="border-y border-line bg-white py-20 sm:py-24 lg:py-28">
+    <section className="border-y border-line bg-white py-16 sm:py-20 lg:py-24">
       <Container>
         <div className="max-w-3xl">
-          <h2 className="font-display text-3xl font-medium tracking-tight text-ink sm:text-4xl lg:text-5xl">
+          <h2 className="font-display text-4xl font-medium tracking-tight text-ink sm:text-5xl lg:text-[3.5rem]">
             {businessAreasSection.heading}
           </h2>
-          <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
+          <p className="mt-5 text-lg leading-relaxed text-muted sm:text-xl">
             {businessAreasSection.intro}
           </p>
         </div>
 
-        <div className="mt-12 grid border border-line sm:grid-cols-2">
+        <div className="mt-12 grid gap-0 border-t border-line sm:mt-14 md:grid-cols-2 xl:grid-cols-4">
           {areas.map((area, index) => (
             <Link
               key={area.id}
               href={area.href}
-              className={`group flex flex-col justify-between gap-8 p-7 transition-colors duration-200 hover:bg-surface sm:p-9 ${
-                index % 2 === 1 ? "sm:border-l sm:border-line" : ""
-              } ${index >= 2 ? "border-t border-line" : ""}`}
+              className={`group flex flex-col border-b border-line py-8 transition-colors duration-200 hover:bg-surface/80 md:px-6 md:py-10 xl:border-b-0 xl:px-7 ${
+                index > 0 ? "xl:border-l xl:border-line" : ""
+              } ${index % 2 === 1 ? "md:border-l md:border-line xl:border-l" : ""} ${
+                index >= 2 ? "md:border-t md:border-line xl:border-t-0" : ""
+              }`}
             >
-              <div>
-                <span
-                  className="mb-5 block h-px w-10 bg-brand-red transition-all duration-200 group-hover:w-14"
-                  aria-hidden
-                />
-                <h3 className="font-display text-2xl font-medium tracking-tight text-ink">
-                  {area.title}
-                </h3>
-                <p className="mt-3 max-w-sm text-sm leading-relaxed text-muted sm:text-base">
-                  {area.shortDescription}
-                </p>
-              </div>
-              <span className="text-sm font-medium text-graphite transition-colors group-hover:text-brand-red">
+              <span className="font-display text-2xl text-brand-red sm:text-3xl">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <h3 className="mt-5 font-display text-2xl font-medium tracking-tight text-ink sm:text-[1.65rem]">
+                {area.title}
+              </h3>
+              <p className="mt-4 flex-1 text-base leading-relaxed text-muted">
+                {area.shortDescription}
+              </p>
+              <span className="mt-8 text-[0.95rem] font-medium text-graphite transition-colors group-hover:text-brand-red">
                 Saznajte više
               </span>
             </Link>

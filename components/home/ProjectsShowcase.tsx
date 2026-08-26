@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/layout/Container";
+import { ProjectVisual } from "@/components/ui/ProjectVisual";
 import { projectsSection } from "@/data/homepage";
 import type { Project } from "@/data/types";
 import { cn } from "@/lib/utils";
@@ -10,22 +10,25 @@ type ProjectsShowcaseProps = {
 };
 
 /**
- * Large alternating project presentations — not small cards.
+ * Large alternating portfolio rows — architecture first.
  */
 export function ProjectsShowcase({ projects }: ProjectsShowcaseProps) {
   return (
-    <section id="projekti" className="scroll-mt-24 border-y border-line bg-white py-20 sm:py-24 lg:py-28">
+    <section
+      id="projekti"
+      className="scroll-mt-28 border-y border-line bg-white py-16 sm:py-20 lg:py-24"
+    >
       <Container>
         <div className="max-w-3xl">
-          <h2 className="font-display text-3xl font-medium tracking-tight text-ink sm:text-4xl lg:text-5xl">
+          <h2 className="font-display text-4xl font-medium tracking-tight text-ink sm:text-5xl lg:text-[3.5rem]">
             {projectsSection.heading}
           </h2>
-          <p className="mt-4 text-base leading-relaxed text-muted sm:text-lg">
+          <p className="mt-5 text-lg leading-relaxed text-muted sm:text-xl">
             {projectsSection.intro}
           </p>
         </div>
 
-        <div className="mt-14 space-y-16 lg:mt-20 lg:space-y-24">
+        <div className="mt-12 space-y-16 sm:mt-14 lg:mt-16 lg:space-y-20">
           {projects.map((project, index) => {
             const imageSrc = project.images.card ?? project.images.hero;
             const reverse = index % 2 === 1;
@@ -33,54 +36,58 @@ export function ProjectsShowcase({ projects }: ProjectsShowcaseProps) {
             return (
               <article
                 key={project.id}
-                className="grid items-center gap-8 lg:grid-cols-12 lg:gap-12"
+                className="grid items-stretch gap-8 lg:grid-cols-12 lg:gap-10 xl:gap-12"
               >
                 <div
                   className={cn(
-                    "group relative overflow-hidden border border-line bg-surface-muted lg:col-span-7",
+                    "group lg:col-span-7",
                     reverse && "lg:order-2",
                   )}
                 >
-                  <div className="relative aspect-[16/11]">
-                    <Image
-                      src={imageSrc}
-                      alt={project.images.heroAlt}
-                      fill
-                      className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-                      sizes="(max-width: 1024px) 100vw, 58vw"
-                    />
-                  </div>
+                  <ProjectVisual
+                    src={imageSrc}
+                    alt={project.images.heroAlt}
+                    title={project.sectionLabel}
+                    subtitle={project.sectionTitle}
+                    aspectClassName="aspect-[16/11] h-full min-h-[18rem] lg:min-h-[30rem]"
+                    className="transition-transform duration-700 ease-out group-hover:scale-[1.015]"
+                  />
                 </div>
 
                 <div
                   className={cn(
-                    "lg:col-span-5",
+                    "flex flex-col justify-center lg:col-span-5",
                     reverse && "lg:order-1",
                   )}
                 >
-                  <p className="text-xs font-medium uppercase tracking-[0.2em] text-brand-red">
+                  <p className="text-xs font-medium uppercase tracking-[0.22em] text-brand-red sm:text-[0.8rem]">
                     {project.sectionLabel}
                   </p>
-                  <h3 className="mt-3 font-display text-3xl font-medium tracking-tight text-ink sm:text-4xl">
+                  <h3 className="mt-4 font-display text-3xl font-medium tracking-tight text-ink sm:text-4xl lg:text-[2.75rem]">
                     {project.sectionTitle}
                   </h3>
-                  <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2 border-y border-line py-4 text-sm text-graphite">
+
+                  <dl className="mt-7 grid grid-cols-2 gap-x-6 gap-y-4 border-y border-line py-6">
                     {project.facts.map((fact) => (
-                      <li key={fact} className="flex items-center gap-2">
+                      <div key={fact} className="flex gap-3">
                         <span
-                          className="size-1.5 shrink-0 rounded-full bg-brand-red"
+                          className="mt-2 h-px w-4 shrink-0 bg-brand-red"
                           aria-hidden
                         />
-                        {fact}
-                      </li>
+                        <dt className="text-[0.95rem] leading-snug text-graphite sm:text-base">
+                          {fact}
+                        </dt>
+                      </div>
                     ))}
-                  </ul>
-                  <p className="mt-6 text-base leading-relaxed text-muted">
+                  </dl>
+
+                  <p className="mt-7 text-base leading-relaxed text-muted sm:text-lg">
                     {project.sectionCopy}
                   </p>
+
                   <Link
                     href={project.href}
-                    className="mt-8 inline-flex text-sm font-medium tracking-wide text-ink transition-colors hover:text-brand-red"
+                    className="mt-8 inline-flex w-fit border-b border-ink pb-1 text-[0.95rem] font-medium tracking-wide text-ink transition-colors hover:border-brand-red hover:text-brand-red"
                   >
                     Pogledajte projekat
                   </Link>

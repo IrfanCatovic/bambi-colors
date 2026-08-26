@@ -94,7 +94,7 @@ export function ProjectsDropdown({
         ref={buttonRef}
         type="button"
         className={cn(
-          "inline-flex items-center gap-1 text-sm font-medium transition-colors hover:text-brand-red",
+          "inline-flex items-center gap-1 text-[0.95rem] font-medium tracking-wide transition-colors hover:text-brand-red",
           open || active ? "text-brand-red" : "text-ink",
         )}
         aria-expanded={open}
