@@ -1,3 +1,7 @@
+import {
+  COMPANY_DESCRIPTION,
+  COMPANY_NAME,
+} from "./company";
 import { projectNavLinks } from "./projects";
 import type { NavItem, NavLink } from "./types";
 
@@ -19,9 +23,7 @@ export const mainNavigation: NavItem[] = [
   { label: "Kontakt", href: "/kontakt/" },
 ];
 
-/** Flat footer links (no dropdown) */
 export const footerNavigation: NavLink[] = [
-  { label: "Početna", href: "/" },
   { label: "O nama", href: "/o-nama/" },
   { label: "Građevinski materijal", href: "/gradjevinski-materijal/" },
   { label: "Veleprodaja", href: "/veleprodaja/" },
@@ -30,3 +32,7 @@ export const footerNavigation: NavLink[] = [
 ];
 
 export const footerProjectLinks: NavLink[] = projectNavLinks;
+
+export const footerBrandBlurb = COMPANY_DESCRIPTION;
+
+export const footerBrandName = COMPANY_NAME;

@@ -13,13 +13,13 @@ type CtaLinkProps = {
 
 const variants: Record<CtaVariant, string> = {
   primary:
-    "bg-ink text-white hover:bg-ink-soft border border-ink",
+    "bg-ink text-white border border-ink hover:bg-brand-red hover:border-brand-red",
   secondary:
     "bg-transparent text-ink border border-line hover:border-ink",
   ghost:
     "bg-transparent text-ink border border-transparent hover:border-line",
   phone:
-    "bg-transparent text-ink border border-bronze/40 hover:border-bronze",
+    "bg-transparent text-ink border border-brand-red/40 hover:border-brand-red",
 };
 
 /**

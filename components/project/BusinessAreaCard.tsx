@@ -23,7 +23,7 @@ export function BusinessAreaCard({ area, className }: BusinessAreaCardProps) {
       <Link href={area.href} className="flex h-full flex-col focus-visible:outline-offset-[-2px]">
         <ImagePlaceholder
           src={area.image}
-          alt={area.imageAlt}
+          alt={area.imageAlt ?? area.title}
           aspectClassName="aspect-[4/3]"
           label={area.title}
         />
@@ -34,7 +34,7 @@ export function BusinessAreaCard({ area, className }: BusinessAreaCardProps) {
           <p className="text-sm leading-relaxed text-muted">
             {area.shortDescription}
           </p>
-          <span className="mt-auto pt-4 text-sm font-medium text-bronze transition-colors group-hover:text-bronze-deep">
+          <span className="mt-auto pt-4 text-sm font-medium text-brand-red transition-colors group-hover:text-brand-red-deep">
             Saznajte više
           </span>
         </div>

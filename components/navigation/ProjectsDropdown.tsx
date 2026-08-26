@@ -10,6 +10,7 @@ type ProjectsDropdownProps = {
   label: string;
   items: NavLink[];
   className?: string;
+  active?: boolean;
 };
 
 /**
@@ -20,6 +21,7 @@ export function ProjectsDropdown({
   label,
   items,
   className,
+  active = false,
 }: ProjectsDropdownProps) {
   const [open, setOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -92,8 +94,8 @@ export function ProjectsDropdown({
         ref={buttonRef}
         type="button"
         className={cn(
-          "inline-flex items-center gap-1 text-sm font-medium text-ink transition-colors hover:text-bronze",
-          open && "text-bronze",
+          "inline-flex items-center gap-1 text-sm font-medium transition-colors hover:text-brand-red",
+          open || active ? "text-brand-red" : "text-ink",
         )}
         aria-expanded={open}
         aria-haspopup="menu"
@@ -133,7 +135,7 @@ export function ProjectsDropdown({
               ref={(el) => {
                 itemRefs.current[index] = el;
               }}
-              className="block px-4 py-2.5 text-sm text-ink transition-colors hover:bg-surface hover:text-bronze"
+              className="block px-4 py-2.5 text-sm text-ink transition-colors hover:bg-surface hover:text-brand-red"
               onClick={() => setOpen(false)}
             >
               {item.label}

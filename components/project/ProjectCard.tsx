@@ -30,7 +30,7 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
           label={project.name}
         />
         <div className="flex flex-1 flex-col gap-2 p-5 sm:p-6">
-          <p className="text-xs font-medium uppercase tracking-[0.16em] text-bronze">
+          <p className="text-xs font-medium uppercase tracking-[0.16em] text-brand-red">
             {project.type}
           </p>
           <h3 className="font-display text-2xl font-medium tracking-tight text-ink">
@@ -40,7 +40,7 @@ export function ProjectCard({ project, className }: ProjectCardProps) {
           <p className="mt-1 text-sm leading-relaxed text-graphite">
             {project.shortDescription}
           </p>
-          <span className="mt-auto pt-4 text-sm font-medium text-bronze transition-colors group-hover:text-bronze-deep">
+          <span className="mt-auto pt-4 text-sm font-medium text-brand-red transition-colors group-hover:text-brand-red-deep">
             Pogledajte projekat
           </span>
         </div>

@@ -1,44 +1,36 @@
 import type { BusinessArea } from "./types";
 
 /**
- * Business areas communicated under the single master brand.
+ * Business areas under the single master brand.
  */
 
 export const businessAreas: BusinessArea[] = [
   {
     id: "investments",
-    title: "Investicije i stambeni razvoj",
+    title: "Investicije i gradnja",
     shortDescription:
-      "Razvoj stambenih, komercijalnih i ugostiteljskih projekata.",
-    href: "/projekti/novi-pazar/",
-    image: "/images/company/investments.svg",
-    imageAlt: "Investicije i stambeni razvoj",
+      "Razvoj stambenih, poslovnih i turističkih projekata od planiranja do realizacije.",
+    href: "/#projekti",
   },
   {
     id: "materials",
     title: "Građevinski materijal",
     shortDescription:
-      "Asortiman građevinskog materijala za profesionalne i privatne projekte.",
+      "Širok izbor završnog građevinskog materijala za privatne kupce i profesionalne izvođače.",
     href: "/gradjevinski-materijal/",
-    image: "/images/materials/hero.svg",
-    imageAlt: "Građevinski materijal",
   },
   {
     id: "wholesale",
     title: "Veleprodaja",
     shortDescription:
-      "Veleprodajna ponuda za partnere u građevinskom lancu.",
+      "Pouzdano snabdijevanje građevinskim materijalima za firme, izvođače i poslovne partnere.",
     href: "/veleprodaja/",
-    image: "/images/services/wholesale.svg",
-    imageAlt: "Veleprodaja",
   },
   {
     id: "finishing",
     title: "Završni radovi",
     shortDescription:
-      "Izvođenje završnih građevinskih radova uz fokus na kvalitet.",
+      "Fasaderski, gipsarski i završni građevinski radovi realizovani sa fokusom na kvalitet izvedbe.",
     href: "/zavrsni-radovi/",
-    image: "/images/services/finishing.svg",
-    imageAlt: "Završni radovi",
   },
 ];

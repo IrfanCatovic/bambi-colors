@@ -1,13 +1,23 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-label="Kolasin">
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-label="KOLAŠIN placeholder">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#E8E4DE"/>
-      <stop offset="55%" stop-color="#F4F1EC"/>
-      <stop offset="100%" stop-color="#D9D4CC"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1A1A1A"/>
+      <stop offset="55%" stop-color="#2A2A2A"/>
+      <stop offset="100%" stop-color="#3A3A3A"/>
     </linearGradient>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
   </defs>
-  <rect width="1600" height="1000" fill="url(#g)"/>
-  <rect x="80" y="80" width="1440" height="840" fill="none" stroke="#8A7355" stroke-opacity="0.35" stroke-width="2"/>
-  <text x="800" y="490" text-anchor="middle" fill="#6B6760" font-family="Georgia, serif" font-size="36">Kolasin</text>
-  <text x="800" y="540" text-anchor="middle" fill="#8A7355" font-family="Arial, sans-serif" font-size="16" letter-spacing="4">BAMBI COLORS GROUP</text>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+  <rect x="72" y="72" width="1776" height="936" fill="none" stroke="#E6011B" stroke-opacity="0.55" stroke-width="1.5"/>
+  <line x1="72" y1="140" x2="280" y2="140" stroke="#E6011B" stroke-width="2"/>
+  <text x="96" y="120" fill="#E6011B" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="6">RENDER 03 · HERO</text>
+  <text x="96" y="220" fill="#F4F1EC" font-family="Georgia, 'Times New Roman', serif" font-size="64">KOLAŠIN</text>
+  <text x="96" y="290" fill="#C8C4BE" font-family="Arial, Helvetica, sans-serif" font-size="28">Apart-hotel · mountain context</text>
+  <foreignObject x="96" y="360" width="720" height="200">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="color:#9A968F;font-family:Arial,Helvetica,sans-serif;font-size:20px;line-height:1.5;">Architecture within Kolašin landscape. Premium but natural atmosphere.</div>
+  </foreignObject>
+  <text x="96" y="980" fill="#6B6760" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="3">REPLACE WITH FINAL ARCHITECTURAL RENDER</text>
 </svg>

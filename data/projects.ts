@@ -1,8 +1,10 @@
 import type { Project } from "./types";
 
 /**
- * Project content. Only confirmed facts are filled in;
- * everything else uses clear placeholders for later replacement.
+ * Project content — confirmed facts only; placeholders marked clearly.
+ *
+ * Image swap: replace the .svg files with final .webp renders and update
+ * the paths below (e.g. hero.svg → hero.webp).
  */
 
 export const projects: Project[] = [
@@ -12,27 +14,36 @@ export const projects: Project[] = [
     name: "Novi Pazar",
     locationLabel: "Novi Pazar",
     location: "Novi Pazar, Srbija",
-    type: "Stambeno-poslovni kompleks",
+    type: "Stambeno-poslovni projekat",
     shortDescription:
-      "Stambeno-poslovni razvoj. Detalji projekta biće dopunjeni.",
+      "Dvije lamele, 48 stanova i 51 parking mjesto u projektu koji spaja funkcionalnost, kvalitet i savremeni gradski život.",
     description:
-      // TODO: replace with confirmed project description
-      "Opis projekta u Novom Pazaru biće dodat nakon potvrde sadržaja.",
-    status: "U pripremi", // TODO: confirm status
+      "Projekat savremenog gradskog stanovanja organizovan kroz dvije lamele, sa funkcionalnim stambenim jedinicama, poslovnim prostorom i organizovanim parkingom.",
+    status: "Aktuelan projekat",
     href: "/projekti/novi-pazar/",
+    heroLabel: "NOVI PAZAR · STAMBENO-POSLOVNI PROJEKAT",
+    heroHeading: "Savremeno stanovanje, promišljeno do detalja.",
+    heroDescription:
+      "Dvije lamele, 48 stanova i 51 parking mjesto u projektu koji spaja funkcionalnost, kvalitet i savremeni gradski život.",
+    sectionLabel: "NOVI PAZAR",
+    sectionTitle: "Stambeno-poslovni projekat",
+    sectionCopy:
+      "Projekat savremenog gradskog stanovanja organizovan kroz dvije lamele, sa funkcionalnim stambenim jedinicama, poslovnim prostorom i organizovanim parkingom.",
+    facts: ["48 stanova", "2 lamele", "51 parking mjesto", "Po + Pr + 6"],
     stats: [
-      // TODO: replace with confirmed statistics
-      { label: "Jedinice", value: "—" },
-      { label: "Površina", value: "—" },
-      { label: "Status", value: "—" },
+      { label: "Stanovi", value: "48" },
+      { label: "Lamele", value: "2" },
+      { label: "Parking", value: "51" },
+      { label: "Spratnost", value: "Po + Pr + 6" },
     ],
     images: {
+      // Replace with /images/projects/novi-pazar/hero.webp when ready
       hero: "/images/projects/novi-pazar/hero.svg",
-      gallery: [
-        "/images/projects/novi-pazar/gallery-01.svg",
-        "/images/projects/novi-pazar/gallery-02.svg",
-      ],
-      heroAlt: "Projekat Novi Pazar — vizuelni prikaz (placeholder)",
+      card: "/images/projects/novi-pazar/card.svg",
+      gallery: [],
+      heroAlt: "Projekat Novi Pazar — eksterijer (placeholder)",
+      renderBrief:
+        "Wide exterior architectural render of the complete residential building, preferably 3/4 perspective, daytime or warm evening light. Building dominant with negative space for hero copy.",
     },
   },
   {
@@ -41,26 +52,41 @@ export const projects: Project[] = [
     name: "Sjenica",
     locationLabel: "Sjenica",
     location: "Sjenica, Srbija",
-    type: "Stambeno-poslovni kompleks",
+    type: "Stambeno-poslovni projekat",
     shortDescription:
-      "Stambeno-poslovni razvoj. Detalji projekta biće dopunjeni.",
+      "55 stanova, 6 poslovnih prostora i 63 parking mjesta u savremenom objektu projektovanom za svakodnevni komfor.",
     description:
-      // TODO: replace with confirmed project description
-      "Opis projekta u Sjenici biće dodat nakon potvrde sadržaja.",
-    status: "U pripremi", // TODO: confirm status
+      "Savremeno projektovan objekat koji povezuje stanovanje, poslovne sadržaje i organizovanu garažnu i parking infrastrukturu.",
+    status: "Aktuelan projekat",
     href: "/projekti/sjenica/",
+    heroLabel: "SJENICA · STAMBENO-POSLOVNI PROJEKAT",
+    heroHeading: "Prostor za život koji traje.",
+    heroDescription:
+      "55 stanova, 6 poslovnih prostora i 63 parking mjesta u savremenom objektu projektovanom za svakodnevni komfor.",
+    sectionLabel: "SJENICA",
+    sectionTitle: "Stambeno-poslovni projekat",
+    sectionCopy:
+      "Savremeno projektovan objekat koji povezuje stanovanje, poslovne sadržaje i organizovanu garažnu i parking infrastrukturu.",
+    facts: [
+      "55 stanova",
+      "6 poslovnih prostora",
+      "63 parking mjesta",
+      "Po + Pr + 6",
+    ],
     stats: [
-      { label: "Jedinice", value: "—" },
-      { label: "Površina", value: "—" },
-      { label: "Status", value: "—" },
+      { label: "Stanovi", value: "55" },
+      { label: "Poslovni", value: "6" },
+      { label: "Parking", value: "63" },
+      { label: "Spratnost", value: "Po + Pr + 6" },
     ],
     images: {
+      // Replace with /images/projects/sjenica/hero.webp when ready
       hero: "/images/projects/sjenica/hero.svg",
-      gallery: [
-        "/images/projects/sjenica/gallery-01.svg",
-        "/images/projects/sjenica/gallery-02.svg",
-      ],
-      heroAlt: "Projekat Sjenica — vizuelni prikaz (placeholder)",
+      card: "/images/projects/sjenica/card.svg",
+      gallery: [],
+      heroAlt: "Projekat Sjenica — eksterijer (placeholder)",
+      renderBrief:
+        "Wide exterior render showing the complete residential-commercial building. Clean daylight, street-level or elevated 3/4 perspective.",
     },
   },
   {
@@ -69,26 +95,41 @@ export const projects: Project[] = [
     name: "Kolašin",
     locationLabel: "Kolašin",
     location: "Kolašin, Crna Gora",
-    type: "Apart-hotel / turističko-stambeni razvoj",
+    type: "Apart-hotel",
     shortDescription:
-      "Apart-hotel i turističko-stambeni razvoj. Detalji projekta biće dopunjeni.",
+      "Apart-hotel u Smailagića Polju osmišljen za lični boravak i investicioni potencijal u jednoj od najpoznatijih planinskih destinacija Crne Gore.",
     description:
-      // TODO: replace with confirmed project description
-      "Opis projekta u Kolašinu biće dodat nakon potvrde sadržaja.",
-    status: "U pripremi", // TODO: confirm status
+      "Planinski apart-hotel osmišljen kao spoj savremenog boravka, odmora i mogućnosti ulaganja u nekretninu na atraktivnoj turističkoj lokaciji.",
+    status: "Aktuelan projekat",
     href: "/projekti/kolasin/",
+    heroLabel: "KOLAŠIN · APART-HOTEL",
+    heroHeading: "Planinski život. Investicija sa karakterom.",
+    heroDescription:
+      "Apart-hotel u Smailagića Polju osmišljen za lični boravak i investicioni potencijal u jednoj od najpoznatijih planinskih destinacija Crne Gore.",
+    sectionLabel: "KOLAŠIN · CRNA GORA",
+    sectionTitle: "Apart-hotel",
+    sectionCopy:
+      "Planinski apart-hotel osmišljen kao spoj savremenog boravka, odmora i mogućnosti ulaganja u nekretninu na atraktivnoj turističkoj lokaciji.",
+    facts: [
+      "Turističko stanovanje",
+      "Smailagića Polje",
+      "Apartmanski koncept",
+      "Lični boravak + investicioni potencijal",
+    ],
     stats: [
-      { label: "Jedinice", value: "—" },
-      { label: "Površina", value: "—" },
-      { label: "Status", value: "—" },
+      { label: "Lokacija", value: "Smailagića Polje" },
+      { label: "Tip", value: "Apart-hotel" },
+      { label: "Koncept", value: "Apartmani" },
+      { label: "Namjena", value: "Boravak + investicija" },
     ],
     images: {
+      // Replace with /images/projects/kolasin/hero.webp when ready
       hero: "/images/projects/kolasin/hero.svg",
-      gallery: [
-        "/images/projects/kolasin/gallery-01.svg",
-        "/images/projects/kolasin/gallery-02.svg",
-      ],
-      heroAlt: "Projekat Kolašin — vizuelni prikaz (placeholder)",
+      card: "/images/projects/kolasin/card.svg",
+      gallery: [],
+      heroAlt: "Projekat Kolašin — apart-hotel (placeholder)",
+      renderBrief:
+        "Wide exterior render of the apart-hotel with mountain/environment context. Premium but natural atmosphere showing architecture within Kolašin.",
     },
   },
 ];

@@ -2,29 +2,29 @@ import type { CompanyContact } from "./types";
 
 /**
  * Single source of truth for company identity and contact.
- * Change phone / address here — components consume these constants.
  */
 
 export const COMPANY_NAME = "Bambi Colors Group";
 
-export const COMPANY_TAGLINE =
-  "Građevinski lanac — od materijala i izvođenja do razvoja stambenih, komercijalnih i ugostiteljskih projekata.";
+export const COMPANY_LOGO = {
+  src: "/brand/logo.png",
+  alt: "Bambi Colors Group",
+  width: 2172,
+  height: 724,
+} as const;
 
-/** Short footer / about blurb — replace with confirmed copy later */
+export const COMPANY_TAGLINE =
+  "Od građevinskog materijala do prostora za život.";
+
 export const COMPANY_DESCRIPTION =
-  "Bambi Colors Group je građevinska i investiciona grupacija. Delujemo kroz investicije i stambeni razvoj, građevinski materijal, veleprodaju i završne radove.";
+  "Bambi Colors Group povezuje građevinski materijal, veleprodaju, završne radove i razvoj sopstvenih stambenih i turističkih projekata.";
 
 export const COMPANY_CONTACT: CompanyContact = {
   phoneDisplay: "063 470 666",
   phoneHref: "tel:+38163470666",
-  addressLines: [
-    // TODO: replace with confirmed address
-    "Adresa — biće potvrđena",
-    "Srbija",
-  ],
+  addressLines: ["Dr Ejupa Mušovića 61, Novi Pazar"],
 };
 
-/** Re-export phone helpers for one-line imports */
 export const PHONE_DISPLAY = COMPANY_CONTACT.phoneDisplay;
 export const PHONE_HREF = COMPANY_CONTACT.phoneHref;
 

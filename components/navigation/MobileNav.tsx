@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Menu, Phone, X } from "lucide-react";
 import { mainNavigation } from "@/data/navigation";
 import { PHONE_DISPLAY, PHONE_HREF } from "@/data/company";
+import { Logo } from "@/components/brand/Logo";
 import { cn } from "@/lib/utils";
 
 type MobileNavProps = {
@@ -12,7 +13,7 @@ type MobileNavProps = {
 };
 
 /**
- * Mobile navigation drawer with expandable projects list.
+ * Mobile navigation drawer with expandable projects and easy call action.
  */
 export function MobileNav({ className }: MobileNavProps) {
   const [open, setOpen] = useState(false);
@@ -47,7 +48,7 @@ export function MobileNav({ className }: MobileNavProps) {
     <div className={cn("lg:hidden", className)}>
       <button
         type="button"
-        className="inline-flex size-10 items-center justify-center border border-line text-ink transition-colors hover:border-ink"
+        className="inline-flex size-10 items-center justify-center text-ink transition-colors hover:text-brand-red"
         aria-expanded={open}
         aria-controls={panelId}
         aria-label={open ? "Zatvori meni" : "Otvori meni"}
@@ -59,7 +60,7 @@ export function MobileNav({ className }: MobileNavProps) {
       {open ? (
         <>
           <div
-            className="fixed inset-0 z-50 bg-ink/40"
+            className="fixed inset-0 z-50 bg-ink/45"
             onClick={close}
             aria-hidden
           />
@@ -69,10 +70,10 @@ export function MobileNav({ className }: MobileNavProps) {
             role="dialog"
             aria-modal="true"
             aria-label="Mobilna navigacija"
-            className="fixed inset-y-0 right-0 z-50 flex w-[min(100%,22rem)] flex-col border-l border-line bg-white"
+            className="fixed inset-y-0 right-0 z-50 flex w-[min(100%,22rem)] flex-col bg-surface"
           >
             <div className="flex items-center justify-between border-b border-line px-5 py-4">
-              <p className="text-sm font-medium tracking-wide text-ink">Meni</p>
+              <Logo height={32} href="/" />
               <button
                 type="button"
                 className="inline-flex size-10 items-center justify-center text-ink"
@@ -109,7 +110,7 @@ export function MobileNav({ className }: MobileNavProps) {
                               <li key={child.href}>
                                 <Link
                                   href={child.href}
-                                  className="block px-3 py-2.5 text-sm text-graphite hover:text-bronze"
+                                  className="block px-3 py-2.5 text-sm text-graphite hover:text-brand-red"
                                   onClick={close}
                                 >
                                   {child.label}
@@ -126,7 +127,7 @@ export function MobileNav({ className }: MobileNavProps) {
                     <li key={item.href}>
                       <Link
                         href={item.href}
-                        className="block px-3 py-3 text-base font-medium text-ink hover:text-bronze"
+                        className="block px-3 py-3 text-base font-medium text-ink hover:text-brand-red"
                         onClick={close}
                       >
                         {item.label}
@@ -140,10 +141,10 @@ export function MobileNav({ className }: MobileNavProps) {
             <div className="border-t border-line p-5">
               <a
                 href={PHONE_HREF}
-                className="inline-flex items-center gap-2 text-base font-medium text-ink"
+                className="flex w-full items-center justify-center gap-2 bg-ink px-4 py-3.5 text-sm font-medium tracking-wide text-white transition-colors hover:bg-brand-red"
               >
-                <Phone className="size-4 text-bronze" aria-hidden />
-                {PHONE_DISPLAY}
+                <Phone className="size-4" aria-hidden />
+                Pozovite {PHONE_DISPLAY}
               </a>
             </div>
           </div>

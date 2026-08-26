@@ -1,21 +1,24 @@
 @import "tailwindcss";
 
 :root {
-  /* Near-black / graphite */
+  /* Near-black / charcoal */
   --ink: #141414;
   --ink-soft: #2a2a2a;
   --graphite: #3d3d3d;
 
-  /* Neutrals */
+  /* Warm white / stone */
   --surface: #f4f1ec;
   --surface-muted: #e8e4de;
   --line: #d9d4cc;
   --muted: #6b6760;
 
-  /* Restrained bronze / muted gold accent */
-  --bronze: #8a7355;
-  --bronze-soft: #a08b6e;
-  --bronze-deep: #6e5a42;
+  /*
+   * Bambi red — sampled from logo.png (#E6011B).
+   * Adjust here to refine the brand accent globally.
+   */
+  --brand-red: #e6011b;
+  --brand-red-soft: #f03a4d;
+  --brand-red-deep: #b80116;
 
   --background: var(--surface);
   --foreground: var(--ink);
@@ -31,9 +34,9 @@
   --color-surface-muted: var(--surface-muted);
   --color-line: var(--line);
   --color-muted: var(--muted);
-  --color-bronze: var(--bronze);
-  --color-bronze-soft: var(--bronze-soft);
-  --color-bronze-deep: var(--bronze-deep);
+  --color-brand-red: var(--brand-red);
+  --color-brand-red-soft: var(--brand-red-soft);
+  --color-brand-red-deep: var(--brand-red-deep);
 
   --font-sans: var(--font-dm-sans);
   --font-display: var(--font-cormorant);
@@ -50,16 +53,34 @@ body {
 }
 
 ::selection {
-  background: color-mix(in srgb, var(--bronze) 28%, transparent);
+  background: color-mix(in srgb, var(--brand-red) 22%, transparent);
   color: var(--ink);
 }
 
 :focus-visible {
-  outline: 2px solid var(--bronze);
+  outline: 2px solid var(--brand-red);
   outline-offset: 3px;
 }
 
+@keyframes hero-progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animate-hero-progress {
+  animation: hero-progress 6s linear forwards;
+}
+
 @media (prefers-reduced-motion: reduce) {
+  .animate-hero-progress {
+    animation: none;
+    width: 100%;
+  }
+
   html {
     scroll-behavior: auto;
   }

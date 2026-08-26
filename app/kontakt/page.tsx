@@ -23,19 +23,19 @@ export default function ContactPage() {
     >
       <div className="max-w-lg space-y-8">
         <div>
-          <p className="text-xs font-medium uppercase tracking-[0.16em] text-bronze">
+          <p className="text-xs font-medium uppercase tracking-[0.16em] text-brand-red">
             Telefon
           </p>
           <a
             href={PHONE_HREF}
-            className="mt-2 inline-block font-display text-3xl font-medium tracking-tight text-ink transition-colors hover:text-bronze sm:text-4xl"
+            className="mt-2 inline-block font-display text-3xl font-medium tracking-tight text-ink transition-colors hover:text-brand-red sm:text-4xl"
           >
             {PHONE_DISPLAY}
           </a>
         </div>
 
         <div>
-          <p className="text-xs font-medium uppercase tracking-[0.16em] text-bronze">
+          <p className="text-xs font-medium uppercase tracking-[0.16em] text-brand-red">
             Adresa
           </p>
           <div className="mt-2 space-y-1 text-base text-muted">
