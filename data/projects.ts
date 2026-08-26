@@ -82,11 +82,10 @@ export const projects: Project[] = [
       { label: "Spratnost", value: "Po + Pr + 6" },
     ],
     images: {
-      // Replace with /images/projects/sjenica/hero.webp when ready
-      hero: "/images/projects/sjenica/hero.svg",
-      card: "/images/projects/sjenica/card.svg",
+      hero: "/images/projects/sjenica/hero.jpg",
+      card: "/images/projects/sjenica/card.jpg",
       gallery: [],
-      heroAlt: "Projekat Sjenica — eksterijer (placeholder)",
+      heroAlt: "Projekat Sjenica — eksterijer stambeno-poslovnog objekta",
       renderBrief:
         "Wide exterior render showing the complete residential-commercial building. Clean daylight, street-level or elevated 3/4 perspective.",
     },
@@ -125,11 +124,10 @@ export const projects: Project[] = [
       { label: "Namjena", value: "Boravak + investicija" },
     ],
     images: {
-      // Replace with /images/projects/kolasin/hero.webp when ready
-      hero: "/images/projects/kolasin/hero.svg",
-      card: "/images/projects/kolasin/card.svg",
-      gallery: [],
-      heroAlt: "Projekat Kolašin — apart-hotel (placeholder)",
+      hero: "/images/projects/kolasin/hero.jpg",
+      card: "/images/projects/kolasin/card.jpg",
+      gallery: ["/images/projects/kolasin/gallery-01.jpg"],
+      heroAlt: "Projekat Kolašin — eksterijer apart-hotela",
       renderBrief:
         "Wide exterior render of the apart-hotel with mountain/environment context. Premium but natural atmosphere showing architecture within Kolašin.",
     },

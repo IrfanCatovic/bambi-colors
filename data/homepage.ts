@@ -5,9 +5,9 @@ import type { StatItem, WhyItem } from "./types";
  */
 
 export const homepageStats: StatItem[] = [
-  { value: "15+", label: "godina iskustva" },
-  { value: "3", label: "grada sa aktuelnim projektima" },
-  { value: "100+", label: "stambenih jedinica u projektima" },
+  { value: "20+", label: "godina iskustva" },
+  { value: "20.000+ m²", label: "kroz projekte" },
+  { value: "100+", label: "stambenih jedinica" },
   { value: "4", label: "oblasti poslovanja" },
 ];
 
@@ -15,7 +15,7 @@ export const brandStatement = {
   eyebrow: "BAMBI COLORS GROUP",
   heading: "Od građevinskog materijala do prostora za život.",
   paragraphs: [
-    "Više od 15 godina iskustva u građevinskom sektoru omogućilo nam je da razvijemo poslovanje koje danas povezuje građevinski materijal, veleprodaju, završne radove i razvoj sopstvenih stambenih i turističkih projekata.",
+    "Više od 20 godina iskustva u građevinskom sektoru omogućilo nam je da razvijemo poslovanje koje danas povezuje građevinski materijal, veleprodaju, završne radove i razvoj sopstvenih stambenih i turističkih projekata.",
     "Poznavanje cijelog procesa daje nam širu perspektivu svakog projekta — od izbora materijala i izvođenja do prostora koji na kraju postaje dom, poslovni prostor ili investicija.",
   ],
 } as const;
@@ -35,7 +35,7 @@ export const whyBambi: {
     {
       title: "Iskustvo koje se gradi godinama",
       description:
-        "Više od 15 godina prisustva u građevinskom sektoru.",
+        "Više od 20 godina iskustva u građevinskom sektoru.",
     },
     {
       title: "Od materijala do investicije",

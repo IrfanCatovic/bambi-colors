@@ -27,10 +27,10 @@ export function TrustStats({ stats }: TrustStatsProps) {
                 index >= 1 && "lg:border-l lg:border-line",
               )}
             >
-              <p className="font-display text-4xl font-medium tracking-tight text-ink sm:text-5xl">
+              <p className="font-display text-3xl font-medium tracking-tight text-ink whitespace-nowrap sm:text-4xl lg:text-5xl">
                 {stat.value}
               </p>
-              <p className="mt-3 max-w-[12rem] text-sm leading-snug text-muted sm:text-[0.95rem]">
+              <p className="mt-3 max-w-[11rem] text-sm leading-snug text-muted sm:max-w-[13rem] sm:text-[0.95rem]">
                 {stat.label}
               </p>
             </div>
