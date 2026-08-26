@@ -138,9 +138,6 @@ export function HeroSlider({ projects }: HeroSliderProps) {
             className="mt-8 inline-flex items-center gap-2 border border-white/30 bg-white/5 px-5 py-3 text-sm font-medium tracking-wide text-white transition-colors duration-200 hover:border-white hover:bg-white hover:text-ink"
           >
             Pogledajte projekat
-            <span aria-hidden className="text-brand-red">
-              →
-            </span>
           </Link>
         </div>
 

@@ -80,15 +80,9 @@ export function ProjectsShowcase({ projects }: ProjectsShowcaseProps) {
                   </p>
                   <Link
                     href={project.href}
-                    className="group mt-8 inline-flex items-center gap-2 text-sm font-medium tracking-wide text-ink transition-colors hover:text-brand-red"
+                    className="mt-8 inline-flex text-sm font-medium tracking-wide text-ink transition-colors hover:text-brand-red"
                   >
                     Pogledajte projekat
-                    <span
-                      className="translate-x-0 transition-transform duration-200 group-hover:translate-x-1"
-                      aria-hidden
-                    >
-                      →
-                    </span>
                   </Link>
                 </div>
               </article>

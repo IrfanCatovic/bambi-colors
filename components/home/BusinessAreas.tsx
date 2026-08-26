@@ -45,7 +45,7 @@ export function BusinessAreas({ areas }: BusinessAreasProps) {
                 </p>
               </div>
               <span className="text-sm font-medium text-graphite transition-colors group-hover:text-brand-red">
-                Saznajte više →
+                Saznajte više
               </span>
             </Link>
           ))}

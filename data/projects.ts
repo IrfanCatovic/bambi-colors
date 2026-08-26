@@ -4,7 +4,7 @@ import type { Project } from "./types";
  * Project content — confirmed facts only; placeholders marked clearly.
  *
  * Image swap: replace the .svg files with final .webp renders and update
- * the paths below (e.g. hero.svg → hero.webp).
+ * the paths below (e.g. hero.svg to hero.webp).
  */
 
 export const projects: Project[] = [
