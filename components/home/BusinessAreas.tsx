@@ -1,7 +1,7 @@
-import Link from "next/link";
-import { Container } from "@/components/layout/Container";
-import { businessAreasSection } from "@/data/homepage";
-import type { BusinessArea } from "@/data/types";
+import Link from 'next/link';
+import { Container } from '@/components/layout/Container';
+import { businessAreasSection } from '@/data/homepage';
+import type { BusinessArea } from '@/data/types';
 
 type BusinessAreasProps = {
   areas: BusinessArea[];
@@ -28,22 +28,26 @@ export function BusinessAreas({ areas }: BusinessAreasProps) {
             <Link
               key={area.id}
               href={area.href}
-              className={`group flex flex-col border-b border-line py-8 transition-colors duration-200 hover:bg-surface/80 md:px-6 md:py-10 xl:border-b-0 xl:px-7 ${
-                index > 0 ? "xl:border-l xl:border-line" : ""
-              } ${index % 2 === 1 ? "md:border-l md:border-line xl:border-l" : ""} ${
-                index >= 2 ? "md:border-t md:border-line xl:border-t-0" : ""
+              className={`group flex flex-col border-b border-line py-8 transition-[background-color,transform] duration-300 ease-out hover:bg-surface/80 md:px-6 md:py-10 xl:border-b-0 xl:px-7 ${
+                index > 0 ? 'xl:border-l xl:border-line' : ''
+              } ${index % 2 === 1 ? 'md:border-l md:border-line xl:border-l' : ''} ${
+                index >= 2 ? 'md:border-t md:border-line xl:border-t-0' : ''
               }`}
             >
-              <span className="font-display text-2xl text-brand-red sm:text-3xl">
-                {String(index + 1).padStart(2, "0")}
+              <span
+                className="mb-5 block h-px w-8 bg-brand-red transition-all duration-300 ease-out group-hover:w-14"
+                aria-hidden
+              />
+              <span className="font-display text-2xl text-brand-red transition-transform duration-300 ease-out group-hover:translate-x-0.5 sm:text-3xl">
+                {String(index + 1).padStart(2, '0')}
               </span>
-              <h3 className="mt-5 font-display text-2xl font-medium tracking-tight text-ink sm:text-[1.65rem]">
+              <h3 className="mt-5 font-display text-2xl font-medium tracking-tight text-ink transition-colors duration-300 group-hover:text-ink-soft sm:text-[1.65rem]">
                 {area.title}
               </h3>
               <p className="mt-4 flex-1 text-base leading-relaxed text-muted">
                 {area.shortDescription}
               </p>
-              <span className="mt-8 text-[0.95rem] font-medium text-graphite transition-colors group-hover:text-brand-red">
+              <span className="mt-8 inline-block text-[0.95rem] font-medium text-graphite transition-[color,transform] duration-300 group-hover:translate-x-1 group-hover:text-brand-red">
                 Saznajte više
               </span>
             </Link>
