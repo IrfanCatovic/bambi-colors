@@ -36,7 +36,7 @@ export function ProjectVisual({
     return (
       <div
         className={cn(
-          "relative overflow-hidden bg-ink",
+          "arch-frame relative overflow-hidden bg-ink",
           aspectClassName,
           className,
         )}

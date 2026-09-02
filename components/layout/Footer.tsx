@@ -17,7 +17,11 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-auto border-t border-white/10 bg-ink text-surface">
+    <footer className="relative mt-auto border-t border-white/10 bg-ink text-surface">
+      <div
+        className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-brand-red/70 to-transparent"
+        aria-hidden
+      />
       <Container className="py-16 sm:py-20">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-12 lg:gap-10">
           <div className="lg:col-span-4">
@@ -36,7 +40,7 @@ export function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-[0.95rem] text-white/70 transition-colors hover:text-white"
+                    className="link-draw text-[0.95rem] text-white/70 transition-colors hover:text-white"
                   >
                     {item.label}
                   </Link>
@@ -54,7 +58,7 @@ export function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-[0.95rem] text-white/70 transition-colors hover:text-white"
+                    className="link-draw text-[0.95rem] text-white/70 transition-colors hover:text-white"
                   >
                     {item.label}
                   </Link>

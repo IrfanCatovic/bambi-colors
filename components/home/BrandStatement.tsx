@@ -1,4 +1,5 @@
 import { Container } from "@/components/layout/Container";
+import { BrandMark } from "@/components/ui/BrandMark";
 import { brandStatement } from "@/data/homepage";
 
 export function BrandStatement() {
@@ -7,13 +8,7 @@ export function BrandStatement() {
       <Container>
         <div className="grid items-start gap-8 lg:grid-cols-12 lg:gap-12">
           <div className="lg:col-span-3 lg:pt-2">
-            <p className="text-xs font-medium uppercase tracking-[0.22em] text-brand-red sm:text-[0.8rem]">
-              {brandStatement.eyebrow}
-            </p>
-            <div
-              className="mt-5 h-px w-14 bg-brand-red"
-              aria-hidden
-            />
+            <BrandMark label={brandStatement.eyebrow} />
           </div>
           <div className="lg:col-span-9">
             <h2 className="max-w-4xl font-display text-4xl font-medium leading-[1.08] tracking-tight text-ink sm:text-5xl lg:text-[3.5rem]">

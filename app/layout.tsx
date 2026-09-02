@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
+import { ScrollProgress } from "@/components/layout/ScrollProgress";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { buildMetadata } from "@/lib/seo";
@@ -31,6 +32,7 @@ export default function RootLayout({
       className={`${dmSans.variable} ${cormorant.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-background font-sans text-foreground">
+        <ScrollProgress />
         <Header />
         {children}
         <Footer />

@@ -8,6 +8,10 @@ export function FinalCta() {
     <section className="bg-ink py-16 text-white sm:py-20 lg:py-24">
       <Container>
         <div className="mx-auto max-w-3xl text-center">
+          <span
+            className="mx-auto mb-8 block h-px w-16 bg-brand-red/80"
+            aria-hidden
+          />
           <h2 className="font-display text-4xl font-medium tracking-tight sm:text-5xl lg:text-[3.35rem]">
             {finalCta.heading}
           </h2>

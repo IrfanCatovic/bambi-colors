@@ -50,7 +50,7 @@ export function DesktopNav({ className }: DesktopNavProps) {
             key={item.href}
             href={item.href}
             className={cn(
-              "text-[0.95rem] font-medium tracking-wide transition-colors hover:text-brand-red",
+              "link-draw pb-0.5 text-[0.95rem] font-medium tracking-wide transition-colors hover:text-brand-red",
               active ? "text-brand-red" : "text-ink",
             )}
             aria-current={active ? "page" : undefined}

@@ -18,7 +18,8 @@ export function BusinessAreas({ areas }: BusinessAreasProps) {
           <h2 className="font-display text-4xl font-medium tracking-tight text-ink sm:text-5xl lg:text-[3.5rem]">
             {businessAreasSection.heading}
           </h2>
-          <p className="mt-5 text-lg leading-relaxed text-muted sm:text-xl">
+          <span className="brand-rule mt-6 block" aria-hidden />
+          <p className="mt-6 text-lg leading-relaxed text-muted sm:text-xl">
             {businessAreasSection.intro}
           </p>
         </div>

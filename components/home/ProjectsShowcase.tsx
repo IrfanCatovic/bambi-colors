@@ -23,7 +23,8 @@ export function ProjectsShowcase({ projects }: ProjectsShowcaseProps) {
           <h2 className="font-display text-4xl font-medium tracking-tight text-ink sm:text-5xl lg:text-[3.5rem]">
             {projectsSection.heading}
           </h2>
-          <p className="mt-5 text-lg leading-relaxed text-muted sm:text-xl">
+          <span className="brand-rule mt-6 block" aria-hidden />
+          <p className="mt-6 text-lg leading-relaxed text-muted sm:text-xl">
             {projectsSection.intro}
           </p>
         </div>
@@ -87,7 +88,7 @@ export function ProjectsShowcase({ projects }: ProjectsShowcaseProps) {
 
                   <Link
                     href={project.href}
-                    className="mt-8 inline-flex w-fit border-b border-ink pb-1 text-[0.95rem] font-medium tracking-wide text-ink transition-colors hover:border-brand-red hover:text-brand-red"
+                    className="link-draw mt-8 inline-flex w-fit pb-0.5 text-[0.95rem] font-medium tracking-wide text-ink transition-colors hover:text-brand-red"
                   >
                     Pogledajte projekat
                   </Link>

@@ -30,8 +30,8 @@ export function Header() {
       className={cn(
         "sticky top-0 z-40 border-b bg-surface transition-[border-color,box-shadow] duration-300",
         scrolled
-          ? "border-line shadow-[0_1px_0_rgba(20,20,20,0.06)]"
-          : "border-line/70",
+          ? "border-line bg-surface/95 shadow-[0_1px_0_rgba(20,20,20,0.06)] backdrop-blur-md"
+          : "border-line/70 bg-surface",
       )}
     >
       <Container className="flex h-[4.75rem] items-center justify-between gap-5 sm:h-[5.25rem] lg:h-[5.5rem]">

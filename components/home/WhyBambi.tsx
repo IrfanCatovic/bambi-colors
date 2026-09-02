@@ -18,9 +18,9 @@ export function WhyBambi() {
               {whyBambi.items.map((item, index) => (
                 <li
                   key={item.title}
-                  className="grid gap-3 border-b border-line py-8 sm:grid-cols-[5rem_1fr] sm:gap-10 sm:py-9"
+                  className="grid gap-3 border-b border-line py-8 transition-colors duration-300 hover:bg-surface/40 sm:grid-cols-[5rem_1fr] sm:gap-10 sm:py-9"
                 >
-                  <span className="font-display text-3xl font-medium text-brand-red sm:text-4xl">
+                  <span className="tabular-display font-display text-3xl font-medium text-brand-red sm:text-4xl">
                     {String(index + 1).padStart(2, "0")}
                   </span>
                   <div>
