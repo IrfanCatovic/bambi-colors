@@ -2,7 +2,7 @@ import { PageShell } from "@/components/layout/PageShell";
 import { CtaLink } from "@/components/ui/CtaLink";
 import { PHONE_HREF } from "@/data/company";
 import { buildMetadata } from "@/lib/seo";
-
+//ovde treba izmena
 export const metadata = buildMetadata({
   title: "O nama",
   description:
