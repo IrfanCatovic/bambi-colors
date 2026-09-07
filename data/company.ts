@@ -15,7 +15,7 @@ export const COMPANY_LOGO = {
 
 export const COMPANY_TAGLINE =
   "Od građevinskog materijala do prostora za život.";
-
+//treba izmena ovde
 export const COMPANY_DESCRIPTION =
   "Bambi Colors Group povezuje građevinski materijal, veleprodaju, završne radove i razvoj sopstvenih stambenih i turističkih projekata.";
 
