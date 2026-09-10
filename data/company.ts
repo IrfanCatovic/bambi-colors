@@ -1,7 +1,7 @@
 import type { CompanyContact } from "./types";
 
 /**
- * Single source of truth for company identity and contact.
+ * Single source of truth for company identity and contact. moramo da dodamo info
  */
 
 export const COMPANY_NAME = "Bambi Colors Group";
