@@ -8,6 +8,7 @@ type BusinessAreasProps = {
 };
 
 /**
+ * ovde mora izmena da se uradi
  * Capability overview — numbered columns with thin dividers, no cards.
  */
 export function BusinessAreas({ areas }: BusinessAreasProps) {
