@@ -1,7 +1,7 @@
 import type { BusinessArea } from "./types";
 
 /**
- * Business areas under the single master brand.
+ * Business areas under the single master brand
  */
 
 export const businessAreas: BusinessArea[] = [
