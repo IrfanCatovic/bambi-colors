@@ -10,7 +10,7 @@ type BuildMetadataOptions = {
 
 /**
  * Shared metadata builder for static pages.
- * Keeps Open Graph / canonical patterns consistent across routes.
+ * Keeps Open Graph / canonical patterns consistent across routes...
  */
 export function buildMetadata({
   title,
